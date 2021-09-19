@@ -41,6 +41,7 @@ public class Test01 {
         calculatorSubpage.selectAccountType(AccountType.ENTERPRISE);
         calculatorSubpage.selectUserCount(7);
         calculatorSubpage.selectSubscriptionLength(3);
+
         Assert.assertEquals(calculatorSubpage.checkCost(Currency.GBP), expectedPriceInGBP, errorInExpectedPrice+expectedPriceInGBP);
         Assert.assertEquals(calculatorSubpage.checkCost(Currency.EUR), expectedPriceInEUR, errorInExpectedPrice+expectedPriceInEUR);
         Assert.assertEquals(calculatorSubpage.checkCost(Currency.USD), expectedPriceInUSD, errorInExpectedPrice+expectedPriceInUSD);

@@ -36,7 +36,7 @@ public class Test02 {
         downloadedFileName = knowledgeBasePage.downloadXTMManualFile();
         downloadFileObject = new File(downloadPath + downloadedFileName);
 
-        waitForTheFileToDownload(downloadFileObject);
+        waitForTheFileToDownload(downloadFileObject);  // this only gives up to 60 seconds for file to download
 
         Assert.assertTrue("File doesn't exist in Downloads folder", downloadFileObject.exists());
     }
